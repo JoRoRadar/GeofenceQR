@@ -1,0 +1,15 @@
+{
+    "name":"Radar Geofence QR",
+    "description": "Use this extension to render a QR code for a given Radar Geofence Location.",
+    "version": "0.1",
+    "manifest_version":3,
+    "icons":{
+        "512":"Icons/radar_qr.png",
+        "128":"Icons/radar_qr_128.png",
+        "48":"Icons/radar_qr_48.png"
+    },
+    "action": {
+        "default_popup":"qr_view.html"
+    },
+    "permissions": ["activeTab", "scripting"]
+}
