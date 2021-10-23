@@ -11,5 +11,19 @@
     "action": {
         "default_popup":"qr_view.html"
     },
+    "content_scripts":[
+        {
+            "matches": ["https://radar.io/*"],
+            "js": ["qr_modal/qr_modal.js"],
+            "css" : ["qr_modal/qr_modal.css"],
+            "html" : ["qr_modal/qr_modal.html"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["Icons/radar_qr.png", "qr_modal/qr_modal.html"],
+            "matches": ["https://radar.io/*"]
+        }
+    ],
     "permissions": ["activeTab", "scripting"]
 }
