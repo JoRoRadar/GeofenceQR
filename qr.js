@@ -65,7 +65,7 @@ function scrapeAPIKey(){
         return null;
     }
 
-    return {"apiKey": api_key};
+    return {"radar_test_publishable_api_key": api_key};
 }
 
 //Retrieve Geofence Data for Trip with Regex
@@ -87,7 +87,7 @@ function scrapeGeofenceData(){
         return null;
     }
 
-    return {"tag": tag, "id": id};
+    return {"radar_geofence_tag": tag, "radar_geofence_id": id};
 }
 
 /*                   */
